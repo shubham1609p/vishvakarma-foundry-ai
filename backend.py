@@ -24,7 +24,7 @@ logger = logging.getLogger(__name__)
 
 # Configure Gemini API
 # Try to get from environment, or use default for testing
-GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', 'AIzaSyDkDN-O8h-RC3UBcq2HfEzZBtF0ZvJRhZ8')
+GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', '===============')
 
 if not GEMINI_API_KEY or GEMINI_API_KEY == 'YOUR_API_KEY_HERE':
     logger.warning('[SETUP] ⚠️  GEMINI_API_KEY not set in environment. Using default key.')
